@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[polish]{babel}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{lettrine}
+\usepackage{xcolor}
+\usepackage[nodayofweek]{datetime}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[autocite=superscript]{biblatex}
+\addbibresource{bibliography.bib}
+
+\title{Wspinaczka sportowa w Polsce: stosowana skala trudności oraz popularne rejony skałkowe}
+\author{Marcin Młynarczyk}
+\newdate{date}{19}{6}{2020}
+\date{\displaydate{date}}
+\definecolor{blue}{cmyk}{.6,.28,0,.04}
+
+\usepackage{sectsty}
+\chapterfont{\color{blue}}
+\sectionfont{\color{blue}}
+\subsectionfont{\color{blue}}
+
+\addto\captionspolish{
+  \renewcommand{\contentsname}%
+    {\color{blue}Spis treści}%
+}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\bigskip
+
+% template 
+\begin{figure}[!htbp]
+	\begin{center}
+		\includegraphics[width=0.7\linewidth]{path}
+	\end{center}
+	\caption{caption}
+	\label{label}
+\end{figure}
+
+\section{Wstęp}
+\lettrine[lines=2]{L}{orem} ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\nocite{*}
+\addcontentsline{toc}{section}{Bibliografia}
+\printbibliography
+
+\end{document}

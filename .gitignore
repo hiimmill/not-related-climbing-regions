@@ -1,0 +1,12 @@
+# blacklist everything
+*
+# except
+!.gitignore
+!sportowa_mlynarczykm.tex
+!sportowa_mlynarczykm.pdf
+!images/
+images/*
+!images/*.eps
+!Makefile
+!bibliography.bib
+!README.md
